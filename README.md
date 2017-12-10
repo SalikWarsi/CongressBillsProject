@@ -34,7 +34,7 @@ All data from [@unitedstates](https://github.com/unitedstates) is Public Domain.
 
 I will have a copy of the data in this repository, so future researchers can use that directly.
 
-## Methodology
+# Methodology
 
 I will be using a logistic regression to estimate the chances of a bill passing the chamber. At the same time I will also also be doing a linear regression to compare the size of majority and the chances of bill passing for a member of the majority.  
 
