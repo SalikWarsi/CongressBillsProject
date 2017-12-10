@@ -15,7 +15,7 @@ I try to answer the following questions in this analysis:
 5. Does having bipartisan support increase the odds of a bill's success? 
 6. Finally is there a decrease in bipartisan support in the congress?
 
-## Data Sources
+# Data Sources
 My primary data Source will be ProPublica's data of all the bills introduced in Congress in each session: https://www.propublica.org/datastore/dataset/congressional-data-bulk-legislation-bills 
 
 This data is Licensed under Probublica's [Terms of Use](https://www.propublica.org/datastore/terms) . However, I have mailed them and confirmed that I am allowed to republish their data.
