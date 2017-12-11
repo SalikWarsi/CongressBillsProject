@@ -63,9 +63,38 @@ The data about bills introduced in congress is a treasure trove. Some of the pos
 2. How likely is it for women to Sponsor/ Cosponsor bills? Do these bills have a similar chance of success? This is especially important considering the low proportion of women in the Congress both currently and historically. The US GitHub does contain data for gender for the Legislators. 
 3. Using the Wikipedia data for each Legislator, provided in US GitHub account, we could try obtaining more information and see how that affects their bills. For example, are legislators elected with a larger majority more likely to introduce more bills?
 
-
 # License
 My research would be released under an MIT License and the data is all public domain.
+
+# Files Checked In
+Apart from the notebook and the license, the following files are part of this github:
+1. ManualData/CongressMembership_1973-2017.csv : This file was manually created by me from Wikipedia and records the composition of both House and Senate for each congress from 1973 to 2017
+2. AdditionalData/CurrentLegislators.csv : This file was downloaded from US Congress Github and contains data about all active legislators.
+3. AdditionalData/HistoricLegislators.csv : This file was downloaded from US Congress Github and contains data about all former legislators.
+4. Images: These were created while running the notebook. 
+5. Cleaned Data: CongressBills_1973-2017.csv: This is created after data processing in the python notebook and contains various information about the congress bills. Its schema is:
+
+| Column               | Values                                                                                        |
+|----------------------|-----------------------------------------------------------------------------------------------|
+| Congress             | Number of the Congress: from 93 to 115                                                        |
+| Bill                 | Number of the bill, E.g. hr1                                                                  |
+| Type                 | Type of Bill; one of "hconres", "hjres", "hr", "hres", "s", "sconres", "sjres", "sres"        |
+| Status               | Final status of the Bill                                                                      |
+| CosponsorCount       | How many cosponsors the bill had                                                              |
+| SponsorParty         | Political party of the lead sponsor: Democrat, Republican, Other or empty                     |
+| DemocratCoSponsers   | How many democratic cosponsors the bill had                                                   |
+| RepublicanCoSponsers | How many republican cosponsors the bill had                                                   |
+| Subject              | Subject of the bill                                                                           |
+| Result               | Result of the bill based on the status. Can be: "Enacted", "Passed", "Vetoed" or "Not Passed" |
+| DemocratHouse        | Count of Democrat members of the House of Representatives at the beginning of that Congress   |
+| RepublicanHouse      | Count of Republican members of the House of Representatives at the beginning of that Congress |
+| OtherHouse           | Count of Other members of the House of Representatives at the beginning of that Congress      |
+| DemocratSenate       | Count of Democrat members of the Senate at the beginning of that Congress                     |
+| RepublicanSenate     | Count of Republican members of the Senate at the beginning of that Congress                   |
+| OtherSenate          | Count of Other members of the Senate at the beginning of that Congress                        |
+| Presidency           | Political Party of the President                                                              |
+| Year                 | Year of the Beginning of the Congress                                                         |
+| Chamber              | Originating Chamber of the bill:can be: House or Senate                                       |
 
 # Human Centered Data Science Perspective
 
